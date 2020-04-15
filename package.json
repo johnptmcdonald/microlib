@@ -1,6 +1,6 @@
 {
   "name": "john-js-library",
-  "version": "0.0.0-development",
+  "version": "0.0.0-semantically-released",
   "description": "Example for library creation ",
   "main": "src/index.js",
   "scripts": {

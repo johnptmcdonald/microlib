@@ -6,7 +6,6 @@ const random = (num) => {
     return uniqueRandomArray(names)();
   } else {
     let randomItems = [];
-
     for (let i = 0; i < num; i++) {
       randomItems.push(uniqueRandomArray(names)());
     }

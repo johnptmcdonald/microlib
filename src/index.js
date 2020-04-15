@@ -9,7 +9,6 @@ const random = (num) => {
     for (let i = 0; i < num; i++) {
       randomItems.push(uniqueRandomArray(names)());
     }
-
     return randomItems;
   }
 };

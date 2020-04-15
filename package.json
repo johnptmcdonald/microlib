@@ -1,6 +1,6 @@
 {
-  "name": "js-library",
-  "version": "1.0.0",
+  "name": "john-js-library",
+  "version": "1.1.0",
   "description": "Example for library creation ",
   "main": "src/index.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "example",
     "simple"
   ],
-  "author": "John McDonald <johnptmcdonald@gmail.com> (http://www.johnptmcdonald.com/)",
+  "author": "johnptmcdonald <johnptmcdonald@gmail.com> (http://www.johnptmcdonald.com/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/johnptmcdonald/microlib/issues"

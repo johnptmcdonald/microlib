@@ -5,10 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "commit": "git-cz",
-    "coverage": "nyc npm run test:single",
-    "report-coverage": "nyc npm run test:single --reporter=text-lcov > coverage.lcov && ./node_modules/.bin/codecov",
-    "test": "mocha src/tests/index.test.js -w",
-    "test:single": "mocha src/tests/index.test.js",
+    "coverage": "codecov",
+    "test": "nyc --reporter=lcov --reporter=text-summary mocha src/tests/*.js",
     "semantic-release": "semantic-release"
   },
   "repository": {

@@ -7,7 +7,7 @@ before_install: npm i -g npm
 before_script:
   - npm prune
 script:
-  - npm run test:single
+  - npm run test
   - npm run coverage
 after_success:
   - npm run semantic-release

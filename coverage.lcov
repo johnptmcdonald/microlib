@@ -1,0 +1,23 @@
+
+> john-js-library@0.0.0-semantically-released test:single /Users/johnmcdonald/workspace/egghead/js-library
+> mocha src/tests/index.test.js
+
+
+
+  names
+    all
+      ✓ should be an array of strings
+      ✓ should include Luke Skywalker
+    random
+      ✓ should return a random item
+      ✓ should return an array of random items if passed a number
+
+
+  4 passing (10ms)
+
+----------|---------|----------|---------|---------|-------------------
+File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------|---------|----------|---------|---------|-------------------
+All files |     100 |      100 |     100 |     100 |                   
+ index.js |     100 |      100 |     100 |     100 |                   
+----------|---------|----------|---------|---------|-------------------

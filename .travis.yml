@@ -8,5 +8,6 @@ before_script:
   - npm prune
 script:
   - npm run test:single
+  - npm run coverage
 after_success:
   - npm run semantic-release

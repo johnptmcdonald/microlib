@@ -1,5 +1,5 @@
 const uniqueRandomArray = require("unique-random-array");
-import names from "./names.json";
+const names = require("./names.json");
 
 const random = (num) => {
   if (num === undefined) {

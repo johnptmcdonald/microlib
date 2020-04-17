@@ -9,7 +9,7 @@
     "cover": "nyc npm t",
     "test": "nyc --reporter=lcov --reporter=text-summary mocha src/tests/*.js --require babel-core/register",
     "semantic-release": "semantic-release",
-    "build:main": "babel --copy-files --out-dir dist src --ignore tests",
+    "build": "babel --copy-files --out-dir dist src --ignore tests",
     "prebuild": "rimraf dist"
   },
   "repository": {

@@ -21,9 +21,9 @@ describe("names", () => {
     it("should return an array of random items if passed a number", () => {
       const randomItems = names.random(3);
       expect(randomItems).to.have.length(3);
-      for (randomItem of randomItems) {
+      randomItems.forEach((randomItem) => {
         expect(names.all).to.include(randomItem);
-      }
+      });
     });
   });
 });

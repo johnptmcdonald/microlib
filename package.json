@@ -2,12 +2,15 @@
   "name": "john-js-library",
   "version": "0.0.0-semantically-released",
   "description": "Example for library creation ",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "commit": "git-cz",
     "report-coverage": "codecov",
-    "test": "nyc --reporter=lcov --reporter=text-summary mocha src/tests/*.js",
-    "semantic-release": "semantic-release"
+    "cover": "nyc npm t",
+    "test": "nyc --reporter=lcov --reporter=text-summary mocha src/tests/*.js --require babel-core/register",
+    "semantic-release": "semantic-release",
+    "build": "babel --copy-files --out-dir dist src --ignore tests",
+    "prebuild": "rimraf dist"
   },
   "repository": {
     "type": "git",
@@ -16,6 +19,10 @@
   "keywords": [
     "example",
     "simple"
+  ],
+  "files": [
+    "dist",
+    "README.md"
   ],
   "author": "johnptmcdonald <johnptmcdonald@gmail.com> (http://www.johnptmcdonald.com/)",
   "license": "MIT",
@@ -27,6 +34,11 @@
     "unique-random-array": "2.0.0"
   },
   "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.3",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-stage-2": "6.24.1",
+    "babel-register": "6.26.0",
     "chai": "4.2.0",
     "codecov": "3.6.5",
     "commitizen": "4.0.4",
@@ -35,6 +47,7 @@
     "istanbul": "0.4.5",
     "mocha": "7.1.1",
     "nyc": "15.0.1",
+    "rimraf": "3.0.2",
     "semantic-release": "^17.0.4"
   },
   "czConfig": {
@@ -44,5 +57,11 @@
     "ghooks": {
       "pre-commit": "npm test"
     }
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "stage-2"
+    ]
   }
 }
